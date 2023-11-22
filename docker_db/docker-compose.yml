@@ -23,9 +23,9 @@ services:
       - 3307:3306/tcp
     volumes:
       - mysql_data:/var/lib/mysql
-  
-  volumes:
-    mysql_data: # docker volume create mysql_data
+
+volumes:
+  mysql_data: # docker volume create mysql_data
     external: true
   
   postgres_data: # docker volume create postgres_data

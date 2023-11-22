@@ -51,9 +51,9 @@ services:
         condition: service_healthy
       airflow-init:
         condition: service_completed_successfully
-      container_name: airflow-webserver
-      restart: always
-      command: webserver
+    container_name: airflow-webserver
+    restart: always
+    command: webserver
     ports:
       - "8080:8080"
     healthcheck:
@@ -80,6 +80,7 @@ services:
         mkdir -p /sources/logs /sources/dags /sources/plugins
         chown -R "${AIRFLOW_UID}:0" /sources/{logs,dags,plugins}
         exec /entrypoint airflow version
-  volumes:
-    postgres_airflow:
-      external: true
+
+volumes:
+  postgres_airflow:
+    external: true

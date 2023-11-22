@@ -6,11 +6,11 @@ services:
       PGDATA: /var/lib/postgresql/data
       POSTGRES_PASSWORD: metabase
       POSTGRES_USER: metabase
-			POSTGRES_DB: metabase
+      POSTGRES_DB: metabase
     volumes:
-    - postgres_data:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql/data
     ports:
-    - 5439:5432/tcp
+      - 5439:5432/tcp
   metabase-app:
     image: metabase/metabase
     environment:
@@ -21,13 +21,13 @@ services:
       MB_DB_TYPE: metabase
       MB_DB_USER: metabase
     volumes:
-    - metabase:/metabase-data
+      - metabase:/metabase-data
     links:
-    - postgres-db:postgres-db
+      - postgres-db:postgres-db
     ports:
-    - 3010:3000/tcp
-  volumes:
-    metabase: # docker volume create metabase
+      - 3010:3000/tcp
+volumes:
+  metabase: # docker volume create metabase
     external: true
   
   postgres_data: # docker volume create postgres_data
