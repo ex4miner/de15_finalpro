@@ -1,0 +1,204 @@
+[2023-11-24T07:17:26.287+0000] {processor.py:157} INFO - Started process (PID=294) to work on /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:17:26.287+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/modules/dag-finalpro-fredicia.py for tasks to queue
+[2023-11-24T07:17:26.288+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:17:26.287+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:17:26.290+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:17:26.289+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/modules/dag-finalpro-fredicia.py", line 76
+    [docs]    t1 = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2023-11-24T07:17:26.290+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:17:26.303+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/modules/dag-finalpro-fredicia.py took 0.019 seconds
+[2023-11-24T07:17:56.690+0000] {processor.py:157} INFO - Started process (PID=299) to work on /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:17:56.692+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/modules/dag-finalpro-fredicia.py for tasks to queue
+[2023-11-24T07:17:56.693+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:17:56.693+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:17:56.696+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:17:56.695+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/modules/dag-finalpro-fredicia.py", line 76
+    [docs]    t1 = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2023-11-24T07:17:56.696+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:17:56.711+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/modules/dag-finalpro-fredicia.py took 0.023 seconds
+[2023-11-24T07:18:27.149+0000] {processor.py:157} INFO - Started process (PID=304) to work on /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:18:27.151+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/modules/dag-finalpro-fredicia.py for tasks to queue
+[2023-11-24T07:18:27.152+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:18:27.152+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:18:27.154+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:18:27.154+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/modules/dag-finalpro-fredicia.py", line 76
+    [docs]    t1 = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2023-11-24T07:18:27.154+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:18:27.169+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/modules/dag-finalpro-fredicia.py took 0.023 seconds
+[2023-11-24T07:18:57.650+0000] {processor.py:157} INFO - Started process (PID=309) to work on /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:18:57.651+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/modules/dag-finalpro-fredicia.py for tasks to queue
+[2023-11-24T07:18:57.652+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:18:57.651+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:18:57.654+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:18:57.653+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/modules/dag-finalpro-fredicia.py", line 76
+    [docs]    t1 = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2023-11-24T07:18:57.654+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:18:57.668+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/modules/dag-finalpro-fredicia.py took 0.021 seconds
+[2023-11-24T07:19:08.957+0000] {processor.py:157} INFO - Started process (PID=314) to work on /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:19:08.958+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/modules/dag-finalpro-fredicia.py for tasks to queue
+[2023-11-24T07:19:08.958+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:19:08.958+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:19:08.961+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:19:08.960+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/modules/dag-finalpro-fredicia.py", line 42
+    def func_insert_province_daily(**kwargs):
+    ^
+IndentationError: expected an indented block
+[2023-11-24T07:19:08.962+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:19:08.977+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/modules/dag-finalpro-fredicia.py took 0.023 seconds
+[2023-11-24T07:20:27.384+0000] {processor.py:157} INFO - Started process (PID=198) to work on /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:20:27.385+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/modules/dag-finalpro-fredicia.py for tasks to queue
+[2023-11-24T07:20:27.386+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:20:27.386+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:20:27.388+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:20:27.387+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/modules/dag-finalpro-fredicia.py", line 42
+    def func_insert_province_daily(**kwargs):
+    ^
+IndentationError: expected an indented block
+[2023-11-24T07:20:27.388+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:20:27.402+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/modules/dag-finalpro-fredicia.py took 0.020 seconds
+[2023-11-24T07:21:13.351+0000] {processor.py:157} INFO - Started process (PID=198) to work on /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:21:13.352+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/modules/dag-finalpro-fredicia.py for tasks to queue
+[2023-11-24T07:21:13.353+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:21:13.353+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:21:13.355+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:21:13.354+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/modules/dag-finalpro-fredicia.py", line 42
+    def func_insert_province_daily(**kwargs):
+    ^
+IndentationError: expected an indented block
+[2023-11-24T07:21:13.355+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:21:13.369+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/modules/dag-finalpro-fredicia.py took 0.020 seconds
+[2023-11-24T07:21:43.646+0000] {processor.py:157} INFO - Started process (PID=204) to work on /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:21:43.646+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/modules/dag-finalpro-fredicia.py for tasks to queue
+[2023-11-24T07:21:43.647+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:21:43.647+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:21:43.650+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:21:43.649+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/modules/dag-finalpro-fredicia.py", line 42
+    def func_insert_province_daily(**kwargs):
+    ^
+IndentationError: expected an indented block
+[2023-11-24T07:21:43.650+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:21:43.672+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/modules/dag-finalpro-fredicia.py took 0.031 seconds
+[2023-11-24T07:22:14.033+0000] {processor.py:157} INFO - Started process (PID=209) to work on /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:22:14.033+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/modules/dag-finalpro-fredicia.py for tasks to queue
+[2023-11-24T07:22:14.034+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:22:14.034+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:22:14.036+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:22:14.035+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/modules/dag-finalpro-fredicia.py", line 42
+    def func_insert_province_daily(**kwargs):
+    ^
+IndentationError: expected an indented block
+[2023-11-24T07:22:14.036+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:22:14.051+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/modules/dag-finalpro-fredicia.py took 0.021 seconds
+[2023-11-24T07:22:44.311+0000] {processor.py:157} INFO - Started process (PID=214) to work on /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:22:44.312+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/modules/dag-finalpro-fredicia.py for tasks to queue
+[2023-11-24T07:22:44.313+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:22:44.312+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:22:44.314+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:22:44.314+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/modules/dag-finalpro-fredicia.py", line 42
+    def func_insert_province_daily(**kwargs):
+    ^
+IndentationError: expected an indented block
+[2023-11-24T07:22:44.314+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:22:44.328+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/modules/dag-finalpro-fredicia.py took 0.019 seconds
+[2023-11-24T07:23:14.884+0000] {processor.py:157} INFO - Started process (PID=219) to work on /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:23:14.886+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/modules/dag-finalpro-fredicia.py for tasks to queue
+[2023-11-24T07:23:14.887+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:23:14.886+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:23:14.889+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:23:14.888+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/modules/dag-finalpro-fredicia.py", line 42
+    def func_insert_province_daily(**kwargs):
+    ^
+IndentationError: expected an indented block
+[2023-11-24T07:23:14.889+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:23:14.905+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/modules/dag-finalpro-fredicia.py took 0.023 seconds
+[2023-11-24T07:23:45.214+0000] {processor.py:157} INFO - Started process (PID=224) to work on /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:23:45.215+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/modules/dag-finalpro-fredicia.py for tasks to queue
+[2023-11-24T07:23:45.216+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:23:45.215+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:23:45.218+0000] {logging_mixin.py:151} INFO - [2023-11-24T07:23:45.217+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/modules/dag-finalpro-fredicia.py", line 42
+    def func_insert_province_daily(**kwargs):
+    ^
+IndentationError: expected an indented block
+[2023-11-24T07:23:45.218+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:23:45.232+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/modules/dag-finalpro-fredicia.py took 0.019 seconds

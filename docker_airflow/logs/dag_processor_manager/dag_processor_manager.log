@@ -1,0 +1,295 @@
+[2023-11-24T06:21:10.262+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2023-11-24T06:21:10.262+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-11-24T06:21:10.262+0000] {manager.py:489} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2023-11-24T06:21:10.262+0000] {manager.py:755} INFO - Searching for files in /opt/airflow/dags
+[2023-11-24T06:21:10.263+0000] {manager.py:758} INFO - There are 0 files in /opt/airflow/dags
+[2023-11-24T06:23:12.003+0000] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2023-11-24T06:23:36.690+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2023-11-24T06:23:36.691+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-11-24T06:23:36.691+0000] {manager.py:489} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2023-11-24T06:23:36.691+0000] {manager.py:755} INFO - Searching for files in /opt/airflow/dags
+[2023-11-24T06:23:36.693+0000] {manager.py:758} INFO - There are 0 files in /opt/airflow/dags
+[2023-11-24T06:23:41.025+0000] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2023-11-24T06:26:20.674+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2023-11-24T06:26:20.675+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-11-24T06:26:20.675+0000] {manager.py:489} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2023-11-24T06:26:20.676+0000] {manager.py:755} INFO - Searching for files in /opt/airflow/dags
+[2023-11-24T06:26:20.676+0000] {manager.py:758} INFO - There are 0 files in /opt/airflow/dags
+[2023-11-24T06:30:10.499+0000] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2023-11-24T06:47:21.815+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2023-11-24T06:47:21.815+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-11-24T06:47:21.816+0000] {manager.py:489} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2023-11-24T06:47:21.816+0000] {manager.py:755} INFO - Searching for files in /opt/airflow/dags
+[2023-11-24T06:47:21.817+0000] {manager.py:758} INFO - There are 0 files in /opt/airflow/dags
+[2023-11-24T06:52:22.410+0000] {manager.py:755} INFO - Searching for files in /opt/airflow/dags
+[2023-11-24T06:52:22.411+0000] {manager.py:758} INFO - There are 0 files in /opt/airflow/dags
+[2023-11-24T06:57:22.614+0000] {manager.py:755} INFO - Searching for files in /opt/airflow/dags
+[2023-11-24T06:57:22.615+0000] {manager.py:758} INFO - There are 0 files in /opt/airflow/dags
+[2023-11-24T07:02:23.550+0000] {manager.py:755} INFO - Searching for files in /opt/airflow/dags
+[2023-11-24T07:02:23.551+0000] {manager.py:758} INFO - There are 0 files in /opt/airflow/dags
+[2023-11-24T07:07:24.362+0000] {manager.py:755} INFO - Searching for files in /opt/airflow/dags
+[2023-11-24T07:07:24.363+0000] {manager.py:758} INFO - There are 1 files in /opt/airflow/dags
+[2023-11-24T07:07:40.612+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag_finalpro_fredica.py                           0           1  0.04s           2023-11-24T07:07:31
+================================================================================
+[2023-11-24T07:08:10.898+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag_finalpro_fredica.py                           0           1  0.04s           2023-11-24T07:08:01
+================================================================================
+[2023-11-24T07:08:41.397+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag_finalpro_fredica.py                           0           1  0.03s           2023-11-24T07:08:32
+================================================================================
+[2023-11-24T07:09:11.864+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag_finalpro_fredica.py                           0           1  0.03s           2023-11-24T07:09:09
+================================================================================
+[2023-11-24T07:09:42.191+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag_finalpro_fredica.py                           0           1  0.03s           2023-11-24T07:09:24
+================================================================================
+[2023-11-24T07:10:12.500+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag_finalpro_fredica.py                           0           1  0.03s           2023-11-24T07:09:54
+================================================================================
+[2023-11-24T07:10:42.903+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag_finalpro_fredica.py                           0           1  0.04s           2023-11-24T07:10:24
+================================================================================
+[2023-11-24T07:11:13.245+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag_finalpro_fredica.py                           0           1  0.03s           2023-11-24T07:10:55
+================================================================================
+[2023-11-24T07:11:43.677+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag_finalpro_fredica.py                           0           1  0.03s           2023-11-24T07:11:25
+================================================================================
+[2023-11-24T07:12:14.207+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag_finalpro_fredica.py                           0           1  0.03s           2023-11-24T07:11:55
+================================================================================
+[2023-11-24T07:12:25.367+0000] {manager.py:755} INFO - Searching for files in /opt/airflow/dags
+[2023-11-24T07:12:25.369+0000] {manager.py:758} INFO - There are 1 files in /opt/airflow/dags
+[2023-11-24T07:12:44.717+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag_finalpro_fredica.py                           0           1  0.03s           2023-11-24T07:12:26
+================================================================================
+[2023-11-24T07:13:15.103+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag_finalpro_fredica.py                           0           1  0.03s           2023-11-24T07:12:56
+================================================================================
+[2023-11-24T07:13:45.440+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag_finalpro_fredica.py                           0           1  0.04s           2023-11-24T07:13:27
+================================================================================
+[2023-11-24T07:14:16.087+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag_finalpro_fredica.py                           0           1  0.04s           2023-11-24T07:13:57
+================================================================================
+[2023-11-24T07:14:46.548+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag_finalpro_fredica.py                           0           1  0.04s           2023-11-24T07:14:28
+================================================================================
+[2023-11-24T07:15:16.842+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag_finalpro_fredica.py                           0           1  0.04s           2023-11-24T07:14:58
+================================================================================
+[2023-11-24T07:15:47.323+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag_finalpro_fredica.py                           0           1  0.03s           2023-11-24T07:15:29
+================================================================================
+[2023-11-24T07:15:57.622+0000] {manager.py:1137} WARNING - Skipping processing of missing file: /opt/airflow/dags/modules/dag_finalpro_fredica.py
+[2023-11-24T07:17:26.263+0000] {manager.py:755} INFO - Searching for files in /opt/airflow/dags
+[2023-11-24T07:17:26.264+0000] {manager.py:758} INFO - There are 1 files in /opt/airflow/dags
+[2023-11-24T07:17:49.515+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag-finalpro-fredicia.py                           0           1  0.03s           2023-11-24T07:17:26
+================================================================================
+[2023-11-24T07:18:20.023+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag-finalpro-fredicia.py                           0           1  0.04s           2023-11-24T07:17:56
+================================================================================
+[2023-11-24T07:18:50.428+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag-finalpro-fredicia.py                           0           1  0.04s           2023-11-24T07:18:27
+================================================================================
+[2023-11-24T07:19:21.046+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag-finalpro-fredicia.py                           0           1  0.04s           2023-11-24T07:19:08
+================================================================================
+[2023-11-24T07:19:22.715+0000] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2023-11-24T07:20:27.347+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2023-11-24T07:20:27.347+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-11-24T07:20:27.348+0000] {manager.py:489} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2023-11-24T07:20:27.348+0000] {manager.py:755} INFO - Searching for files in /opt/airflow/dags
+[2023-11-24T07:20:27.349+0000] {manager.py:758} INFO - There are 1 files in /opt/airflow/dags
+[2023-11-24T07:20:27.402+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/modules/dag-finalpro-fredicia.py    198  0.03s             0           0
+================================================================================
+[2023-11-24T07:20:39.756+0000] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2023-11-24T07:21:13.315+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2023-11-24T07:21:13.315+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-11-24T07:21:13.316+0000] {manager.py:489} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2023-11-24T07:21:13.316+0000] {manager.py:755} INFO - Searching for files in /opt/airflow/dags
+[2023-11-24T07:21:13.317+0000] {manager.py:758} INFO - There are 1 files in /opt/airflow/dags
+[2023-11-24T07:21:13.371+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/modules/dag-finalpro-fredicia.py    198  0.03s             0           0
+================================================================================
+[2023-11-24T07:21:43.635+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag-finalpro-fredicia.py    204  0.01s             0           1  0.03s           2023-11-24T07:21:13
+================================================================================
+[2023-11-24T07:22:14.028+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag-finalpro-fredicia.py    209  0.00s             0           1  0.05s           2023-11-24T07:21:43
+================================================================================
+[2023-11-24T07:22:44.306+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag-finalpro-fredicia.py    214  0.00s             0           1  0.03s           2023-11-24T07:22:14
+================================================================================
+[2023-11-24T07:23:14.878+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag-finalpro-fredicia.py    219  0.00s             0           1  0.03s           2023-11-24T07:22:44
+================================================================================
+[2023-11-24T07:23:45.209+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/modules/dag-finalpro-fredicia.py    224  0.00s             0           1  0.04s           2023-11-24T07:23:14
+================================================================================
+[2023-11-24T07:24:07.514+0000] {manager.py:1137} WARNING - Skipping processing of missing file: /opt/airflow/dags/modules/dag-finalpro-fredicia.py
+[2023-11-24T07:24:56.023+0000] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2023-11-24T14:47:58.673+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2023-11-24T14:47:58.674+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-11-24T14:47:58.674+0000] {manager.py:489} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2023-11-24T14:47:58.675+0000] {manager.py:755} INFO - Searching for files in /opt/airflow/dags
+[2023-11-24T14:47:58.677+0000] {manager.py:758} INFO - There are 1 files in /opt/airflow/dags
+[2023-11-24T14:47:58.762+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/dag-finalpro-fredicia.py    214  0.04s             0           0
+================================================================================
+[2023-11-24T14:48:28.973+0000] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag-finalpro-fredicia.py                           0           1  0.28s           2023-11-24T14:47:58
+================================================================================
