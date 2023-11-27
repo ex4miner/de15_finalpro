@@ -17,8 +17,9 @@ class Connector():
             "database": self.db
         }
 		print("Connecting to MySQL")
-		engine = create_engine(
-                f'mysql+pymysql://{db_params["user"]}:{db_params["password"]}@{db_params["host"]}/{db_params["database"]}')
+		conn_mysql = f'mysql+mysqlconnector://{db_params["user"]}:{db_params["password"]}@{db_params["host"]}:{db_params["port"]}/{db_params["database"]}'
+		print(conn_mysql)
+		engine = create_engine(conn_mysql)
 		return engine
 	
 	def connect_postgres(self):
@@ -30,6 +31,6 @@ class Connector():
             "database": self.db
         }
 		print("Connecting to PostgreSQL")
-		engine = create_engine(
-                f'postgresql+psycopg2://{db_params["user"]}:{db_params["password"]}@{db_params["host"]}/{db_params["database"]}')
+		conn_postgre = f'postgresql+psycopg2://{db_params["user"]}:{db_params["password"]}@{db_params["host"]}:{db_params["port"]}/{db_params["database"]}'
+		engine = create_engine(conn_postgre)
 		return engine

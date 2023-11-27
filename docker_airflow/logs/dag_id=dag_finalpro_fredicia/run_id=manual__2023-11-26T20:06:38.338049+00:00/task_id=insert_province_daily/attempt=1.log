@@ -1,0 +1,34 @@
+[2023-11-26T20:06:42.604+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_finalpro_fredicia.insert_province_daily manual__2023-11-26T20:06:38.338049+00:00 [queued]>
+[2023-11-26T20:06:42.613+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_finalpro_fredicia.insert_province_daily manual__2023-11-26T20:06:38.338049+00:00 [queued]>
+[2023-11-26T20:06:42.613+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-11-26T20:06:42.625+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): insert_province_daily> on 2023-11-26 20:06:38.338049+00:00
+[2023-11-26T20:06:42.631+0000] {standard_task_runner.py:57} INFO - Started process 2800 to run task
+[2023-11-26T20:06:42.633+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_finalpro_fredicia', 'insert_province_daily', 'manual__2023-11-26T20:06:38.338049+00:00', '--job-id', '365', '--raw', '--subdir', 'DAGS_FOLDER/dag-finalpro-fredicia.py', '--cfg-path', '/tmp/tmp_85wradl']
+[2023-11-26T20:06:42.635+0000] {standard_task_runner.py:85} INFO - Job 365: Subtask insert_province_daily
+[2023-11-26T20:06:42.670+0000] {task_command.py:416} INFO - Running <TaskInstance: dag_finalpro_fredicia.insert_province_daily manual__2023-11-26T20:06:38.338049+00:00 [running]> on host 316a5e988948
+[2023-11-26T20:06:42.753+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_finalpro_fredicia' AIRFLOW_CTX_TASK_ID='insert_province_daily' AIRFLOW_CTX_EXECUTION_DATE='2023-11-26T20:06:38.338049+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-26T20:06:38.338049+00:00'
+[2023-11-26T20:06:42.780+0000] {logging_mixin.py:151} INFO - Connecting to MySQL
+[2023-11-26T20:06:42.780+0000] {logging_mixin.py:151} INFO - ***+***connector://***:***@172.17.0.1:3307/***
+[2023-11-26T20:06:43.112+0000] {logging_mixin.py:151} INFO - Connecting to PostgreSQL
+[2023-11-26T20:06:43.173+0000] {logging_mixin.py:151} INFO - GET DATA FROM MYSQL SUCCESS
+[2023-11-26T20:06:43.189+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dag-finalpro-fredicia.py", line 58, in func_insert_province_daily
+    generator_province.create_province_daily()
+  File "/opt/airflow/dags/modules/transformer.py", line 100, in create_province_daily
+    result_district_daily.loc[len(result_district_daily)] = data
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/indexing.py", line 849, in __setitem__
+    iloc._setitem_with_indexer(indexer, value, self.name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/indexing.py", line 1825, in _setitem_with_indexer
+    self._setitem_with_indexer_missing(indexer, value)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/indexing.py", line 2158, in _setitem_with_indexer_missing
+    raise ValueError("cannot set a row with mismatched columns")
+ValueError: cannot set a row with mismatched columns
+[2023-11-26T20:06:43.197+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=dag_finalpro_fredicia, task_id=insert_province_daily, execution_date=20231126T200638, start_date=20231126T200642, end_date=20231126T200643
+[2023-11-26T20:06:43.207+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 365 for task insert_province_daily (cannot set a row with mismatched columns; 2800)
+[2023-11-26T20:06:43.251+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-26T20:06:43.266+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

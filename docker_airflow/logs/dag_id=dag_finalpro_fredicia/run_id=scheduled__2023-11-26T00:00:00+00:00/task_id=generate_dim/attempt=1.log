@@ -1,0 +1,22 @@
+[2023-11-27T04:50:55.054+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_finalpro_fredicia.generate_dim scheduled__2023-11-26T00:00:00+00:00 [queued]>
+[2023-11-27T04:50:55.060+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_finalpro_fredicia.generate_dim scheduled__2023-11-26T00:00:00+00:00 [queued]>
+[2023-11-27T04:50:55.061+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-11-27T04:50:55.070+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): generate_dim> on 2023-11-26 00:00:00+00:00
+[2023-11-27T04:50:55.074+0000] {standard_task_runner.py:57} INFO - Started process 241 to run task
+[2023-11-27T04:50:55.076+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_finalpro_fredicia', 'generate_dim', 'scheduled__2023-11-26T00:00:00+00:00', '--job-id', '385', '--raw', '--subdir', 'DAGS_FOLDER/dag-finalpro-fredicia.py', '--cfg-path', '/tmp/tmpqjttx6vz']
+[2023-11-27T04:50:55.078+0000] {standard_task_runner.py:85} INFO - Job 385: Subtask generate_dim
+[2023-11-27T04:50:55.113+0000] {task_command.py:416} INFO - Running <TaskInstance: dag_finalpro_fredicia.generate_dim scheduled__2023-11-26T00:00:00+00:00 [running]> on host 316a5e988948
+[2023-11-27T04:50:55.168+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_finalpro_fredicia' AIRFLOW_CTX_TASK_ID='generate_dim' AIRFLOW_CTX_EXECUTION_DATE='2023-11-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-26T00:00:00+00:00'
+[2023-11-27T04:50:55.182+0000] {logging_mixin.py:151} INFO - Connecting to MySQL
+[2023-11-27T04:50:55.182+0000] {logging_mixin.py:151} INFO - ***+***connector://***:***@172.17.0.1:3307/***
+[2023-11-27T04:50:55.417+0000] {logging_mixin.py:151} INFO - Connecting to PostgreSQL
+[2023-11-27T04:50:55.455+0000] {logging_mixin.py:151} INFO - GET DATA FROM MYSQL SUCCESS
+[2023-11-27T04:50:55.511+0000] {logging_mixin.py:151} INFO - INSERTED dim_district TO POSTGRES SUCCESSFULLY
+[2023-11-27T04:50:55.521+0000] {logging_mixin.py:151} INFO - GET DATA FROM MYSQL SUCCESS
+[2023-11-27T04:50:55.531+0000] {logging_mixin.py:151} INFO - INSERTED dim_province TO POSTGRES SUCCESSFULLY
+[2023-11-27T04:50:55.540+0000] {logging_mixin.py:151} INFO - GET DATA FROM MYSQL SUCCESS
+[2023-11-27T04:50:55.556+0000] {logging_mixin.py:151} INFO - INSERTED dim_case TO POSTGRES SUCCESSFULLY
+[2023-11-27T04:50:55.556+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-27T04:50:55.563+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=dag_finalpro_fredicia, task_id=generate_dim, execution_date=20231126T000000, start_date=20231127T045055, end_date=20231127T045055
+[2023-11-27T04:50:55.609+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-27T04:50:55.627+0000] {taskinstance.py:2778} INFO - 2 downstream tasks scheduled from follow-on schedule check

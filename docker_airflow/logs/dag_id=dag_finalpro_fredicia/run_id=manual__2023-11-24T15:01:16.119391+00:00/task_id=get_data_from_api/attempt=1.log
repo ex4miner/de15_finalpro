@@ -1,0 +1,52 @@
+[2023-11-24T15:01:17.254+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_finalpro_fredicia.get_data_from_api manual__2023-11-24T15:01:16.119391+00:00 [queued]>
+[2023-11-24T15:01:17.261+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_finalpro_fredicia.get_data_from_api manual__2023-11-24T15:01:16.119391+00:00 [queued]>
+[2023-11-24T15:01:17.261+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-11-24T15:01:17.272+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): get_data_from_api> on 2023-11-24 15:01:16.119391+00:00
+[2023-11-24T15:01:17.277+0000] {standard_task_runner.py:57} INFO - Started process 394 to run task
+[2023-11-24T15:01:17.280+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_finalpro_fredicia', 'get_data_from_api', 'manual__2023-11-24T15:01:16.119391+00:00', '--job-id', '234', '--raw', '--subdir', 'DAGS_FOLDER/dag-finalpro-fredicia.py', '--cfg-path', '/tmp/tmpx6ziz08o']
+[2023-11-24T15:01:17.282+0000] {standard_task_runner.py:85} INFO - Job 234: Subtask get_data_from_api
+[2023-11-24T15:01:17.317+0000] {task_command.py:416} INFO - Running <TaskInstance: dag_finalpro_fredicia.get_data_from_api manual__2023-11-24T15:01:16.119391+00:00 [running]> on host 2a49b9fcd8e7
+[2023-11-24T15:01:17.379+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_finalpro_fredicia' AIRFLOW_CTX_TASK_ID='get_data_from_api' AIRFLOW_CTX_EXECUTION_DATE='2023-11-24T15:01:16.119391+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-24T15:01:16.119391+00:00'
+[2023-11-24T15:01:17.429+0000] {covid_scraper.py:12} INFO - GET DATA FROM API COMPLETED
+[2023-11-24T15:01:17.434+0000] {covid_scraper.py:14} INFO - DATA FROM API TO DATAFRAME READY
+[2023-11-24T15:01:17.443+0000] {logging_mixin.py:151} INFO - <class 'pandas.core.frame.DataFrame'>
+RangeIndex: 145 entries, 0 to 144
+Data columns (total 20 columns):
+ #   Column                    Non-Null Count  Dtype 
+---  ------                    --------------  ----- 
+ 0   CLOSECONTACT              145 non-null    int64 
+ 1   CONFIRMATION              145 non-null    int64 
+ 2   PROBABLE                  145 non-null    int64 
+ 3   SUSPECT                   145 non-null    int64 
+ 4   closecontact_dikarantina  145 non-null    int64 
+ 5   closecontact_discarded    145 non-null    int64 
+ 6   closecontact_meninggal    145 non-null    int64 
+ 7   confirmation_meninggal    145 non-null    int64 
+ 8   confirmation_sembuh       145 non-null    int64 
+ 9   kode_kab                  145 non-null    object
+ 10  kode_prov                 145 non-null    object
+ 11  nama_kab                  145 non-null    object
+ 12  nama_prov                 145 non-null    object
+ 13  probable_diisolasi        145 non-null    int64 
+ 14  probable_discarded        145 non-null    int64 
+ 15  probable_meninggal        145 non-null    int64 
+ 16  suspect_diisolasi         145 non-null    int64 
+ 17  suspect_discarded         145 non-null    int64 
+ 18  suspect_meninggal         145 non-null    int64 
+ 19  tanggal                   145 non-null    object
+dtypes: int64(15), object(5)
+memory usage: 22.8+ KB
+[2023-11-24T15:01:17.443+0000] {logging_mixin.py:151} INFO - None
+[2023-11-24T15:01:17.452+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dag-finalpro-fredicia.py", line 19, in func_get_data_from_api
+    connector = Connector()
+TypeError: __init__() missing 5 required positional arguments: 'host', 'user', 'password', 'db', and 'port'
+[2023-11-24T15:01:17.459+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=dag_finalpro_fredicia, task_id=get_data_from_api, execution_date=20231124T150116, start_date=20231124T150117, end_date=20231124T150117
+[2023-11-24T15:01:17.468+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 234 for task get_data_from_api (__init__() missing 5 required positional arguments: 'host', 'user', 'password', 'db', and 'port'; 394)
+[2023-11-24T15:01:17.497+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-24T15:01:17.516+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

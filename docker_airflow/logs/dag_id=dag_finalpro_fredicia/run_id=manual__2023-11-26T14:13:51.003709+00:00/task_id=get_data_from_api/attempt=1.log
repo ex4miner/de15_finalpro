@@ -1,0 +1,42 @@
+[2023-11-26T14:13:52.349+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_finalpro_fredicia.get_data_from_api manual__2023-11-26T14:13:51.003709+00:00 [queued]>
+[2023-11-26T14:13:52.356+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_finalpro_fredicia.get_data_from_api manual__2023-11-26T14:13:51.003709+00:00 [queued]>
+[2023-11-26T14:13:52.356+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-11-26T14:13:52.366+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): get_data_from_api> on 2023-11-26 14:13:51.003709+00:00
+[2023-11-26T14:13:52.371+0000] {standard_task_runner.py:57} INFO - Started process 337 to run task
+[2023-11-26T14:13:52.373+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_finalpro_fredicia', 'get_data_from_api', 'manual__2023-11-26T14:13:51.003709+00:00', '--job-id', '251', '--raw', '--subdir', 'DAGS_FOLDER/dag-finalpro-fredicia.py', '--cfg-path', '/tmp/tmpybkyb_nd']
+[2023-11-26T14:13:52.374+0000] {standard_task_runner.py:85} INFO - Job 251: Subtask get_data_from_api
+[2023-11-26T14:13:52.419+0000] {task_command.py:416} INFO - Running <TaskInstance: dag_finalpro_fredicia.get_data_from_api manual__2023-11-26T14:13:51.003709+00:00 [running]> on host 494d8b90536b
+[2023-11-26T14:13:52.480+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_finalpro_fredicia' AIRFLOW_CTX_TASK_ID='get_data_from_api' AIRFLOW_CTX_EXECUTION_DATE='2023-11-26T14:13:51.003709+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-26T14:13:51.003709+00:00'
+[2023-11-26T14:13:52.566+0000] {covid_scraper.py:12} INFO - GET DATA FROM API COMPLETED
+[2023-11-26T14:13:52.572+0000] {covid_scraper.py:14} INFO - DATA FROM API TO DATAFRAME READY
+[2023-11-26T14:13:52.579+0000] {logging_mixin.py:151} INFO - <class 'pandas.core.frame.DataFrame'>
+RangeIndex: 145 entries, 0 to 144
+Data columns (total 20 columns):
+ #   Column                    Non-Null Count  Dtype 
+---  ------                    --------------  ----- 
+ 0   CLOSECONTACT              145 non-null    int64 
+ 1   CONFIRMATION              145 non-null    int64 
+ 2   PROBABLE                  145 non-null    int64 
+ 3   SUSPECT                   145 non-null    int64 
+ 4   closecontact_dikarantina  145 non-null    int64 
+ 5   closecontact_discarded    145 non-null    int64 
+ 6   closecontact_meninggal    145 non-null    int64 
+ 7   confirmation_meninggal    145 non-null    int64 
+ 8   confirmation_sembuh       145 non-null    int64 
+ 9   kode_kab                  145 non-null    object
+ 10  kode_prov                 145 non-null    object
+ 11  nama_kab                  145 non-null    object
+ 12  nama_prov                 145 non-null    object
+ 13  probable_diisolasi        145 non-null    int64 
+ 14  probable_discarded        145 non-null    int64 
+ 15  probable_meninggal        145 non-null    int64 
+ 16  suspect_diisolasi         145 non-null    int64 
+ 17  suspect_discarded         145 non-null    int64 
+ 18  suspect_meninggal         145 non-null    int64 
+ 19  tanggal                   145 non-null    object
+dtypes: int64(15), object(5)
+memory usage: 22.8+ KB
+[2023-11-26T14:13:52.579+0000] {logging_mixin.py:151} INFO - None
+[2023-11-26T14:13:52.588+0000] {logging_mixin.py:151} INFO - Connecting to MySQL
+[2023-11-26T14:16:06.382+0000] {dag-finalpro-fredicia.py:26} ERROR - (mysql.connector.errors.DatabaseError) 2003 (HY000): Can't connect to MySQL server on '172.19.0.2:3306' (110)
+(Background on this error at: https://sqlalche.me/e/14/4xp6)

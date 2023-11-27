@@ -1,0 +1,70 @@
+[2023-11-26T16:17:35.143+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_finalpro_fredicia.get_data_from_api manual__2023-11-26T16:17:34.380909+00:00 [queued]>
+[2023-11-26T16:17:35.150+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_finalpro_fredicia.get_data_from_api manual__2023-11-26T16:17:34.380909+00:00 [queued]>
+[2023-11-26T16:17:35.150+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-11-26T16:17:35.161+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): get_data_from_api> on 2023-11-26 16:17:34.380909+00:00
+[2023-11-26T16:17:35.166+0000] {standard_task_runner.py:57} INFO - Started process 295 to run task
+[2023-11-26T16:17:35.167+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_finalpro_fredicia', 'get_data_from_api', 'manual__2023-11-26T16:17:34.380909+00:00', '--job-id', '294', '--raw', '--subdir', 'DAGS_FOLDER/dag-finalpro-fredicia.py', '--cfg-path', '/tmp/tmphv1vkkuh']
+[2023-11-26T16:17:35.169+0000] {standard_task_runner.py:85} INFO - Job 294: Subtask get_data_from_api
+[2023-11-26T16:17:35.200+0000] {task_command.py:416} INFO - Running <TaskInstance: dag_finalpro_fredicia.get_data_from_api manual__2023-11-26T16:17:34.380909+00:00 [running]> on host 316a5e988948
+[2023-11-26T16:17:35.396+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_finalpro_fredicia' AIRFLOW_CTX_TASK_ID='get_data_from_api' AIRFLOW_CTX_EXECUTION_DATE='2023-11-26T16:17:34.380909+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-26T16:17:34.380909+00:00'
+[2023-11-26T16:17:35.458+0000] {covid_scraper.py:12} INFO - GET DATA FROM API COMPLETED
+[2023-11-26T16:17:35.461+0000] {covid_scraper.py:14} INFO - DATA FROM API TO DATAFRAME READY
+[2023-11-26T16:17:35.469+0000] {logging_mixin.py:151} INFO - <class 'pandas.core.frame.DataFrame'>
+RangeIndex: 145 entries, 0 to 144
+Data columns (total 20 columns):
+ #   Column                    Non-Null Count  Dtype 
+---  ------                    --------------  ----- 
+ 0   CLOSECONTACT              145 non-null    int64 
+ 1   CONFIRMATION              145 non-null    int64 
+ 2   PROBABLE                  145 non-null    int64 
+ 3   SUSPECT                   145 non-null    int64 
+ 4   closecontact_dikarantina  145 non-null    int64 
+ 5   closecontact_discarded    145 non-null    int64 
+ 6   closecontact_meninggal    145 non-null    int64 
+ 7   confirmation_meninggal    145 non-null    int64 
+ 8   confirmation_sembuh       145 non-null    int64 
+ 9   kode_kab                  145 non-null    object
+ 10  kode_prov                 145 non-null    object
+ 11  nama_kab                  145 non-null    object
+ 12  nama_prov                 145 non-null    object
+ 13  probable_diisolasi        145 non-null    int64 
+ 14  probable_discarded        145 non-null    int64 
+ 15  probable_meninggal        145 non-null    int64 
+ 16  suspect_diisolasi         145 non-null    int64 
+ 17  suspect_discarded         145 non-null    int64 
+ 18  suspect_meninggal         145 non-null    int64 
+ 19  tanggal                   145 non-null    object
+dtypes: int64(15), object(5)
+memory usage: 22.8+ KB
+[2023-11-26T16:17:35.469+0000] {logging_mixin.py:151} INFO - None
+[2023-11-26T16:17:35.477+0000] {logging_mixin.py:151} INFO - Connecting to MySQL
+[2023-11-26T16:19:46.957+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Can't connect to MySQL server on '172.18.0.2:3306' (110)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dag-finalpro-fredicia.py", line 20, in func_get_data_from_api
+    engine_sql = connector.connect_mysql()
+  File "/opt/airflow/dags/modules/connector.py", line 22, in connect_mysql
+    conn_mysql = mysql.connector.connect(user=db_params["user"], password=db_params["password"], host=db_params["host"], database=db_params["database"])
+  File "/home/airflow/.local/lib/python3.8/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.DatabaseError: 2003 (HY000): Can't connect to MySQL server on '172.18.0.2:3306' (110)
+[2023-11-26T16:19:46.967+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=dag_finalpro_fredicia, task_id=get_data_from_api, execution_date=20231126T161734, start_date=20231126T161735, end_date=20231126T161946
+[2023-11-26T16:19:46.980+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 294 for task get_data_from_api (2003 (HY000): Can't connect to MySQL server on '172.18.0.2:3306' (110); 295)
+[2023-11-26T16:19:47.004+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-26T16:19:47.024+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

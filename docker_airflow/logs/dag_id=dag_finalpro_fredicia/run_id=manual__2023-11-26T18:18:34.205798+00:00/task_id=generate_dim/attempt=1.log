@@ -1,0 +1,26 @@
+[2023-11-26T18:18:36.235+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_finalpro_fredicia.generate_dim manual__2023-11-26T18:18:34.205798+00:00 [queued]>
+[2023-11-26T18:18:36.242+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_finalpro_fredicia.generate_dim manual__2023-11-26T18:18:34.205798+00:00 [queued]>
+[2023-11-26T18:18:36.242+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-11-26T18:18:36.252+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): generate_dim> on 2023-11-26 18:18:34.205798+00:00
+[2023-11-26T18:18:36.257+0000] {standard_task_runner.py:57} INFO - Started process 1207 to run task
+[2023-11-26T18:18:36.259+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_finalpro_fredicia', 'generate_dim', 'manual__2023-11-26T18:18:34.205798+00:00', '--job-id', '316', '--raw', '--subdir', 'DAGS_FOLDER/dag-finalpro-fredicia.py', '--cfg-path', '/tmp/tmpo0nwv0ex']
+[2023-11-26T18:18:36.260+0000] {standard_task_runner.py:85} INFO - Job 316: Subtask generate_dim
+[2023-11-26T18:18:36.289+0000] {task_command.py:416} INFO - Running <TaskInstance: dag_finalpro_fredicia.generate_dim manual__2023-11-26T18:18:34.205798+00:00 [running]> on host 316a5e988948
+[2023-11-26T18:18:36.340+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_finalpro_fredicia' AIRFLOW_CTX_TASK_ID='generate_dim' AIRFLOW_CTX_EXECUTION_DATE='2023-11-26T18:18:34.205798+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-26T18:18:34.205798+00:00'
+[2023-11-26T18:18:36.354+0000] {logging_mixin.py:151} INFO - Connecting to MySQL
+[2023-11-26T18:18:36.354+0000] {logging_mixin.py:151} INFO - ***+***connector://***:***@172.17.0.1:3307/***
+[2023-11-26T18:18:36.658+0000] {logging_mixin.py:151} INFO - Connecting to MySQL
+[2023-11-26T18:18:36.658+0000] {logging_mixin.py:151} INFO - ***+***connector://***:***@172.17.0.1:5435/dwh
+[2023-11-26T18:18:36.693+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dag-finalpro-fredicia.py", line 45, in func_generate_dim
+    generator_dim = Transformer(engine_sql,engine_postgres)
+TypeError: Transformer() takes no arguments
+[2023-11-26T18:18:36.700+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=dag_finalpro_fredicia, task_id=generate_dim, execution_date=20231126T181834, start_date=20231126T181836, end_date=20231126T181836
+[2023-11-26T18:18:36.712+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 316 for task generate_dim (Transformer() takes no arguments; 1207)
+[2023-11-26T18:18:36.752+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-26T18:18:36.772+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
