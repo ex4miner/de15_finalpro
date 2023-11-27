@@ -46,3 +46,27 @@ Traceback (most recent call last):
 airflow.exceptions.AirflowException: The key ' get_data_from_api' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
 [2023-11-24T14:48:29.405+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/dag-finalpro-fredicia.py
 [2023-11-24T14:48:29.420+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag-finalpro-fredicia.py took 0.245 seconds
+[2023-11-24T14:48:59.494+0000] {processor.py:157} INFO - Started process (PID=227) to work on /opt/airflow/dags/dag-finalpro-fredicia.py
+[2023-11-24T14:48:59.495+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag-finalpro-fredicia.py for tasks to queue
+[2023-11-24T14:48:59.496+0000] {logging_mixin.py:151} INFO - [2023-11-24T14:48:59.495+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag-finalpro-fredicia.py
+[2023-11-24T14:48:59.721+0000] {logging_mixin.py:151} INFO - [2023-11-24T14:48:59.720+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/dag-finalpro-fredicia.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag-finalpro-fredicia.py", line 117, in <module>
+    op_get_data_from_api = PythonOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 805, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key ' get_data_from_api' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-11-24T14:48:59.721+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/dag-finalpro-fredicia.py
+[2023-11-24T14:48:59.737+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag-finalpro-fredicia.py took 0.249 seconds
